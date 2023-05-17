@@ -22,10 +22,11 @@ id: doc.id,
 setTasks(tasksList);
 });
 }, []);
-
+// console.log(tasks)
 const getRandomTask = () => {
 const randomIndex = Math.floor(Math.random() * tasks.length);
 const task = tasks[randomIndex];
+// console.log(task)
 const processedTask = CreateTask(task);
 setCurrentTask(processedTask);
 setShowHelp(false);

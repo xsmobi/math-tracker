@@ -4,7 +4,7 @@ function Task({ task, showHelp, showResult, toggleShowHelp }) {
     <div className="Task">
     <h3>{text}</h3>
     {showHelp && <p className="help-text">{help}</p>}
-    {showResult && <p className="help-text">{answer}</p>}
+    {showResult && <h3 className="help-text">{answer}</h3>}
     </div>
     );
     }
